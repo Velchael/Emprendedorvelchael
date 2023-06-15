@@ -21,12 +21,22 @@ body {
   text-decoration: none;
   color: #060606;
   transition: color 0.3s;
+  
 }
 
 #menu ul li a:hover {
   color: hsl(0, 0%, 100%); /* Cambia el color al pasar el ratón por encima */
+ 
 }
-
+.arrow {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: 4px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  transform: rotate(45deg);
+  margin-right: 5px;
+}
 
 .cabecalho {
   grid-column: 1 / 5;
@@ -37,6 +47,7 @@ body {
   background-color:rgb(120, 162, 167);
   padding: 20px 120px;
 }
+
 .list {
   padding: 10px;
   display: inline;
@@ -143,7 +154,7 @@ body {
   font-size: 30px; /* Ajusta el tamaño de fuente según tus preferencias */
   font-weight: bold; /* Aplica un estilo de fuente en negrita si deseas */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
-  top: 20%;
+  top: 16%;
   margin-left: 6em;
   align-items: center;
   position: absolute;
@@ -240,7 +251,7 @@ img {
 }
 .card__info > span {
   display: block;
-  margin-top: 0px;
+  margin-top: 2px;
 }
 .card__titulo {
   text-align: center;
@@ -250,18 +261,16 @@ img {
   border-radius: 7px;
   color: rgb(255 255 255);
   text-transform: uppercase;
-  font-size: 8px;
+  font-size: 10px;
   padding: 2px 4px;
-  margin-top: 0px;
 }
 .card__servico {
-  line-height: 12px;
+  line-height: 16px;
   font-size: 12px;
   font-weight: 300;
   color: rgb(102 102 102);
 }
 .card__interesse  {
-  line-height: 12.6px;
   font-size: 13px;
   line-height: 21px;
   color: rgba(0 0 0 / 80%);
@@ -347,7 +356,7 @@ img {
 /*//////////////////////////////////    Carrusel /////////////////////*/
 .carrusel {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Define 4 columnas de igual ancho */
+  grid-template-columns: repeat(4, 1fr); /*(3) Define 4 columnas de igual ancho */
   grid-gap: 20px; /* Espacio entre columnas */
 }
 .carrusel-items {
@@ -355,7 +364,7 @@ img {
   display: flex;
   overflow-x: hidden;
   overflow-y: hidden;
-  grid-column: 1 / 5; /* El carrusel ocupa desde la primera hasta la cuarta columna */
+  grid-column: 1 / 5; /* (5)  El carrusel ocupa desde la primera hasta la cuarta columna */
   overflow-x: scroll;
   padding: 8px 0px;
 }
@@ -371,7 +380,7 @@ img {
   height: 260px;
 }
 .carrusel-item img {
-  width: 70%;
+  width: 66%;
   height: 60%;
   object-fit: cover;
 }
