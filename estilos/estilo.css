@@ -37,7 +37,9 @@ body {
   transform: rotate(45deg);
   margin-right: 5px;
 }
-
+.first-letter {
+  color: white;
+}
 .cabecalho {
   grid-column: 1 / 5;
   display: flex;
