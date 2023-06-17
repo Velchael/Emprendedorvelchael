@@ -61,28 +61,33 @@ body {
 .imagem-topo {
   grid-column: 1 / 5;
 }
-.avatar__imagem1 {
+/*.avatar__imagem1 {
   height: 100%;
   width: 100%;
- /* border-radius: 50%;*/
-}
+ 
+}*/
 .imagem-topo1 {
-  height: 56px;
-  width: 56px;
-  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border: 1px solid white;
+  border-radius: 3%;
+  border: 1px solid #000000;
+  max-width: 80%; /* Aseguramos que la imagen no supere el ancho del contenedor */
+ /* position: relative;  Agregamos posición relativa */
+  top: 10px; /* Desplazamos la imagen 10px hacia abajo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+.imagem-topo1 img {
+  /*object-fit: contain;*/
+  height: 100%;
+  width: 100%;
 }
 
 .imagen-forma1 {
- /* display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative; */
   border-radius: 3%;
   border: 1px solid #000000;
   max-width: 80%; /* Aseguramos que la imagen no supere el ancho del contenedor */
@@ -97,16 +102,27 @@ body {
 
 .imagem-topo3 {
   grid-column: 2 /3;
-  border-color: rgb(206 212 211);
+ /* border-color: rgb(206 212 211);
   border-width: 3px;
-  border-radius: 160px;
+  border-radius: 160px;*/
   border-style: solid;
+  object-fit: contain;
+
+
+  overflow: hidden;
+  border-radius: 8%;
+  border: 2px solid #000000;
+  max-width: 80%; /* Aseguramos que la imagen no supere el ancho del contenedor */
+ /* position: relative;  Agregamos posición relativa */
+  top: 10px; /* Desplazamos la imagen 10px hacia abajo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
-.avatar__imagem3 {
+/*.avatar__imagem3 {
+   
   height:100%;
   width: 100%;
   border-radius: 100%;
-}
+}*/
 .imagem-topo3 {
   height: 200px;
   width: 200px;
@@ -155,7 +171,7 @@ body {
 
   font-size: 30px; /* Ajusta el tamaño de fuente según tus preferencias */
   font-weight: bold; /* Aplica un estilo de fuente en negrita si deseas */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); 
   top: 16%;
   margin-left: 6em;
   align-items: center;
