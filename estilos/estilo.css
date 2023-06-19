@@ -110,7 +110,7 @@ body {
 
 
   overflow: hidden;
-  border-radius: 8%;
+  border-radius: 100%;
   border: 2px solid #000000;
   max-width: 80%; /* Aseguramos que la imagen no supere el ancho del contenedor */
  /* position: relative;  Agregamos posición relativa */
@@ -384,7 +384,7 @@ img {
   overflow-y: hidden;
   grid-column: 1 / 5; /* (5)  El carrusel ocupa desde la primera hasta la cuarta columna */
   overflow-x: scroll;
-  padding: 8px 0px;
+  padding: 18px 0px;
 }
 .carrusel-item {
   background-color: rgb(255 255 255);
@@ -402,6 +402,22 @@ img {
   height: 60%;
   object-fit: cover;
 }
+.carrusel-item img {
+  /*transition: transform 0.6s ease-in-out;*/
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  border: 2px solid transparent;
+
+}
+
+.carrusel-item img:hover {
+  transform: scale(1.8) translateY(31px);
+  border-color: #747373;
+
+  /*transform: scale(1.6);*/
+  
+}
+
+
 /*
 <aside id="experiencia"class="publicidade-lateral">
 <div style="position:relative; color:#01010e">
