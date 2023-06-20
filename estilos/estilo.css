@@ -1,6 +1,11 @@
 /*
 class="imagen-forma2" class="foto"*/
-
+.realidad-aumentada {
+  /* Agrega los estilos CSS que desees para el efecto */
+  /* Por ejemplo, puedes cambiar el tamaño, posición o agregar animaciones */
+  transform: scale(1.2);
+  border: 2px solid #ffcc00;
+}
 body > * {
   /*padding: 1px;*/
   text-align: center;
@@ -384,7 +389,7 @@ img {
   overflow-y: hidden;
   grid-column: 1 / 5; /* (5)  El carrusel ocupa desde la primera hasta la cuarta columna */
   overflow-x: scroll;
-  padding: 18px 0px;
+  padding: 20px 0px;
 }
 .carrusel-item {
   background-color: rgb(255 255 255);
@@ -397,6 +402,8 @@ img {
   box-shadow: 0 5px 7px 0 rgba(0 0 0 / 20%);
   height: 260px;
 }
+
+
 .carrusel-item img {
   width: 66%;
   height: 60%;
@@ -410,7 +417,7 @@ img {
 }
 
 .carrusel-item img:hover {
-  transform: scale(1.8) translateY(31px);
+  transform: scale(1.8) translateY(30px);
   border-color: #747373;
 
   /*transform: scale(1.6);*/
@@ -429,3 +436,18 @@ img {
 </div>
 </aside>  
 */
+
+/*    publicidad de carrusel zoon de imajen
+<div class="carrusel-item">
+                         <img src="monturaM.jpg" alt="" >
+                         <div class="card__info" >
+                          <span class="card__titulo">Moturas de homen</span>
+                          <span class="card__servico">Preço regular <del><span style="color: red;">R$59.00</span></del></span>
+                          <span class="card__interesse">Preço com desconto<span style="color: blue;">R$49.00</span></span>
+                          <span class="card__descricao">"Descuento loja SolFashion"</span>
+                          <span> <span class="card__titulo">Ven logo</span> </span>
+                         </div>     
+                      </div>
+                      */
+
+                      
