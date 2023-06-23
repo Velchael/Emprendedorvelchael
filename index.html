@@ -12,11 +12,10 @@
       <link rel="manifest" href="/site.webmanifest">
       <script>
       
-      window.addEventListener('DOMContentLoaded', function() {
-           window.scrollTo(0, 0);
-          });
-      
-         
+            window.addEventListener('DOMContentLoaded', function() {
+                window.scrollTo(0, 0);
+            });
+
             window.addEventListener('DOMContentLoaded', function() {
             var apresentacaoLink = document.querySelector('a[href="#apresentacao"]');
             var apresentacaoElement = document.querySelector('#apresentacao');
@@ -83,6 +82,8 @@
               }
             });
             });
+
+           
 
         </script>
      </head>
@@ -173,18 +174,109 @@
                            <span class="card__titulo">Oculo de sol homen</span>
                            <span class="card__servico">Preço regular  <del><span style="color: red;">R$49.00</span></del></span>
                            <span class="card__interesse">Preço Desconto <span style="color: blue;">R$34.00</span></span>
-                           <span> <span class="card__titulofoto">COMPRAR</span> </span>
-                          </div>        
+                           <span> <button class="card__titulofoto" onclick="mostrarTabla()">COMPRAR</button> </span>
+                          </div>                      
                       </div>
+
+                      <div id="tablaCompra" style="display: none;">
+                        <table>
+                          <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio unitario</th>
+                            <th>Total</th>
+                          </tr>
+                          <tr>
+                            <td>Oculo de sol homen</td>
+                            <td><input type="number" min="1" value="1"></td>
+                            <td>R$34.00</td>
+                            <td>R$34.00</td>
+                          </tr>
+                          <!-- Puedes agregar más filas para otros productos -->
+                          <tr>
+                            <td colspan="3"></td>
+                            <td><button onclick="realizarCompra()">Realizar Compra</button></td>
+                          </tr>
+                        </table>
+                      </div>
+
+                      <script>
+                        
+                        function mostrarTabla() {
+                          var tabla = document.getElementById("tablaCompra");
+                          if (tabla.style.display === "none") {
+                           tabla.style.display = "block";
+                          } else {
+                           tabla.style.display = "none";
+                          }
+                          }
+
+
+                        function realizarCompra() {
+                          // Aquí puedes agregar la lógica para procesar la compra
+                          // Puedes obtener los datos de la tabla utilizando métodos del DOM, como getElementById, querySelector, etc.
+                          // Por ejemplo, para obtener la cantidad de productos:
+                          var cantidad = parseInt(document.querySelector("#tablaCompra input").value);
+                          
+                          // Luego puedes realizar las operaciones necesarias y enviar los datos a un servidor, guardar en una base de datos, etc.
+                        }
+                      </script>
+
                       <div class="carrusel-item">
                           <img src="oculosFsol.jpg" alt="" >
                           <div class="card__info">
                            <span class="card__titulo">Oculos de sol mulher</span>
                            <span class="card__servico">Preço regular<del><span style="color: red;">R$49.00</span></del></span>
                            <span class="card__interesse">Preço Desconto <span style="color: blue;">R$34.00</span></span>
-                           <span> <span class="card__titulofoto">COMPRAR</span> </span>
+                           <span> <button class="card__titulofoto" onclick="mostrarTablados()">COMPRAR</button> </span>
                           </div>
                       </div>
+                      <div id="tablaComprados" style="display: none;">
+                        <table>
+                          <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio unitario</th>
+                            <th>Total</th>
+                          </tr>
+                          <tr>
+                            <td>Oculo de sol mulher</td>
+                            <td><input type="number" min="1" value="1"></td>
+                            <td>R$34.00</td>
+                            <td>R$34.00</td>
+                          </tr>
+                          <!-- Puedes agregar más filas para otros productos -->
+                          <tr>
+                            <td colspan="3"></td>
+                            <td><button onclick="realizarCompra()">Realizar Compra</button></td>
+                          </tr>
+                        </table>
+                      </div>
+                     
+                     <script>
+                        
+                        function mostrarTablados() {
+                          var tabla = document.getElementById("tablaComprados");
+                          if (tabla.style.display === "none") {
+                           tabla.style.display = "block";
+                          } else {
+                           tabla.style.display = "none";
+                          }
+                          }
+
+
+                        function realizarCompra() {
+                          // Aquí puedes agregar la lógica para procesar la compra
+                          // Puedes obtener los datos de la tabla utilizando métodos del DOM, como getElementById, querySelector, etc.
+                          // Por ejemplo, para obtener la cantidad de productos:
+                          var cantidad = parseInt(document.querySelector("#tablaCompra input").value);
+                          
+                          // Luego puedes realizar las operaciones necesarias y enviar los datos a un servidor, guardar en una base de datos, etc.
+                        }
+                      </script>
+
+
+
                       <div class="carrusel-item">
                         <img src="monturaF3.jpg" alt="" />
                         <div class="card__info">
