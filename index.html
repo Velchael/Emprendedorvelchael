@@ -161,24 +161,13 @@
                       <div class="carrusel-item">
                         <img src="monturaM.jpg" alt="" >
                         <div class="card__info">
-                         <span class="card__titulo">Moturas de homen</span>
+                         <span class="card__titulo">Motura de homen <span style="color:white;">Cod HM01</span></span>
                          <span class="card__servico">Preço regular <del><span style="color: red;">R$59.00</span></del></span>
                          <span class="card__interesse">Preço Desconto <span style="color: blue;">R$49.00</span></span>
-                         <span> <span class="card__titulofoto">COMPRAR</span> </span>
+                         <span><button id="comprarButtontres" class="card__titulofoto" onclick="mostrarTablatres()">Ativar COMPRAR</button></span>
                         </div> 
                       </div>
-              
-                      <div class="carrusel-item">
-                          <img src="oculosdesolH1.jpg" alt="">   
-                          <div class="card__info">
-                           <span class="card__titulo">Oculo de sol homen</span>
-                           <span class="card__servico">Preço regular  <del><span style="color: red;">R$49.00</span></del></span>
-                           <span class="card__interesse">Preço Desconto <span style="color: blue;">R$34.00</span></span>
-                           <span> <button class="card__titulofoto" onclick="mostrarTabla()">COMPRAR</button> </span>
-                          </div>                      
-                      </div>
-
-                      <div id="tablaCompra" style="display: none;">
+                      <div id="tablaCompratres" style="display: none;">
                         <table>
                           <tr>
                             <th>Producto</th>
@@ -187,48 +176,63 @@
                             <th>Total</th>
                           </tr>
                           <tr>
-                            <td>Oculo de sol homen</td>
+                            <td>Montura de homen Cod. HM01</td>
                             <td><input type="number" min="1" value="1"></td>
-                            <td>R$34.00</td>
+                            <td>R$49.00</td>
                             <td>R$34.00</td>
                           </tr>
-                          <!-- Puedes agregar más filas para otros productos -->
-                          <tr>
-                            <td colspan="3"></td>
-                            <td><button onclick="realizarCompra()">Realizar Compra</button></td>
+                          <tr> 
+                            <td class="compra">Codigo HS01</td>
+                            <td colspan="1"></td>  
+                            <td class="compra">
+                              <a href="https://wa.me/5511981868794">
+                                Realizar Compra, Meu whatsapp
+                              </a>
+                              </td>
                           </tr>
                         </table>
+                    </div>
+                      <div class="carrusel-item">
+                          <img src="oculosdesolH1.jpg" alt="">   
+                          <div class="card__info">
+                           <span class="card__titulo">Oculo de sol homen <span style="color:white;">Cod HS01</span></span>
+                           <span class="card__servico">Preço regular  <del><span style="color: red;">R$49.00</span></del></span>
+                           <span class="card__interesse">Preço Desconto <span style="color: blue;">R$34.00</span></span>
+                           <span><button id="comprarButton" class="card__titulofoto" onclick="mostrarTabla()">Ativar COMPRAR</button></span>
+                          </div>                      
                       </div>
-
-                      <script>
-                        
-                        function mostrarTabla() {
-                          var tabla = document.getElementById("tablaCompra");
-                          if (tabla.style.display === "none") {
-                           tabla.style.display = "block";
-                          } else {
-                           tabla.style.display = "none";
-                          }
-                          }
-
-
-                        function realizarCompra() {
-                          // Aquí puedes agregar la lógica para procesar la compra
-                          // Puedes obtener los datos de la tabla utilizando métodos del DOM, como getElementById, querySelector, etc.
-                          // Por ejemplo, para obtener la cantidad de productos:
-                          var cantidad = parseInt(document.querySelector("#tablaCompra input").value);
-                          
-                          // Luego puedes realizar las operaciones necesarias y enviar los datos a un servidor, guardar en una base de datos, etc.
-                        }
-                      </script>
-
+                      <div id="tablaCompra" style="display: none;">
+                          <table>
+                            <tr>
+                              <th>Producto</th>
+                              <th>Cantidad</th>
+                              <th>Precio unitario</th>
+                              <th>Total</th>
+                            </tr>
+                            <tr>
+                              <td>Oculo de sol homen Cod. HS01</td>
+                              <td><input type="number" min="1" value="1"></td>
+                              <td>R$49.00</td>
+                              <td>R$34.00</td>
+                            </tr>
+                            <tr> 
+                              <td class="compra">Codigo HS01</td>
+                              <td colspan="1"></td>  
+                              <td class="compra">
+                                <a href="https://wa.me/5511981868794">
+                                  Realizar Compra, Meu whatsapp
+                                </a>
+                                </td>
+                            </tr>
+                          </table>
+                      </div>
                       <div class="carrusel-item">
                           <img src="oculosFsol.jpg" alt="" >
                           <div class="card__info">
-                           <span class="card__titulo">Oculos de sol mulher</span>
+                           <span class="card__titulo">Oculo d sol mulher <span style="color:white;">Cod MS01</span></span>
                            <span class="card__servico">Preço regular<del><span style="color: red;">R$49.00</span></del></span>
                            <span class="card__interesse">Preço Desconto <span style="color: blue;">R$34.00</span></span>
-                           <span> <button class="card__titulofoto" onclick="mostrarTablados()">COMPRAR</button> </span>
+                           <span><button id="comprarButtondos" class="card__titulofoto" onclick="mostrarTablados()">Ativar COMPRAR</button></span>
                           </div>
                       </div>
                       <div id="tablaComprados" style="display: none;">
@@ -240,97 +244,228 @@
                             <th>Total</th>
                           </tr>
                           <tr>
-                            <td>Oculo de sol mulher</td>
+                            <td>Oculo de sol mulher Cod. MS01</td>
                             <td><input type="number" min="1" value="1"></td>
-                            <td>R$34.00</td>
+                            <td>R$49.00</td>
                             <td>R$34.00</td>
                           </tr>
-                          <!-- Puedes agregar más filas para otros productos -->
-                          <tr>
-                            <td colspan="3"></td>
-                            <td><button onclick="realizarCompra()">Realizar Compra</button></td>
+                          <tr> 
+                            <td class="compra">Codigo MS01</td>
+                            <td colspan="1"></td>  
+                            <td class="compra">
+                              <a href="https://wa.me/5511981868794">
+                                Realizar Compra, Meu whatsapp
+                              </a>
+                              </td>
                           </tr>
                         </table>
                       </div>
-                     
-                     <script>
-                        
-                        function mostrarTablados() {
-                          var tabla = document.getElementById("tablaComprados");
-                          if (tabla.style.display === "none") {
-                           tabla.style.display = "block";
-                          } else {
-                           tabla.style.display = "none";
-                          }
-                          }
-
-
-                        function realizarCompra() {
-                          // Aquí puedes agregar la lógica para procesar la compra
-                          // Puedes obtener los datos de la tabla utilizando métodos del DOM, como getElementById, querySelector, etc.
-                          // Por ejemplo, para obtener la cantidad de productos:
-                          var cantidad = parseInt(document.querySelector("#tablaCompra input").value);
-                          
-                          // Luego puedes realizar las operaciones necesarias y enviar los datos a un servidor, guardar en una base de datos, etc.
-                        }
-                      </script>
-
-
-
                       <div class="carrusel-item">
                         <img src="monturaF3.jpg" alt="" />
                         <div class="card__info">
-                          <span class="card__titulo">Moturas de mulher</span>
+                          <span class="card__titulo">Moturas de mulher <span style="color:white;">Cod MM01</span></span>
                           <span class="card__servico">Preço regular <del><span style="color: red;">R$59.00</span></del></span>
                           <span class="card__interesse">Preço Desconto<span style="color: blue;">R$49.00</span></span>
-                          <span> <span class="card__titulofoto">COMPRAR</span> </span>
+                          <span><button id="comprarButtonquatro" class="card__titulofoto" onclick="mostrarTablaquatro()">Ativar COMPRAR</button></span>   
                         </div>
-                      </div>               
+                      </div>  
+                      <div id="tablaCompraquatro" style="display: none;">
+                        <table>
+                          <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio unitario</th>
+                            <th>Total</th>
+                          </tr>
+                          <tr>
+                            <td>Montura de mulher Cod. MM01</td>
+                            <td><input type="number" min="1" value="1"></td>
+                            <td>R$59.00</td>
+                            <td>R$49.00</td>
+                          </tr>
+                          <tr> 
+                            <td class="compra">Codigo MM01</td>
+                            <td colspan="1"></td>  
+                            <td class="compra">
+                              <a href="https://wa.me/5511981868794">
+                                Realizar Compra, Meu whatsapp
+                              </a>
+                              </td>
+                          </tr>
+                        </table>
+                    </div>
                       <div class="carrusel-item">
                           <img src="oculosdesoH.jpg" alt="" />
                           <div class="card__info">
-                            <span class="card__titulo">Oculo de sol homen</span>
+                            <span class="card__titulo">Oculo de sol homen <span style="color:white;">Cod HS02</span></span>
                             <span class="card__servico">Preço regular <del><span style="color: red;">R$49.00</span></del></span>
                             <span class="card__interesse">Preço Desconto <span style="color: blue;">R$34.00</span></span>
-                            <span> <span class="card__titulofoto">COMPRAR</span> </span>
+                            <span><button id="comprarButtoncinco" class="card__titulofoto" onclick="mostrarTablacinco()">Ativar COMPRAR</button></span>
                           </div>
                       </div>
+                      <div id="tablaCompracinco" style="display: none;">
+                        <table>
+                          <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio unitario</th>
+                            <th>Total</th>
+                          </tr>
+                          <tr>
+                            <td>Montura de homen Cod. HS02</td>
+                            <td><input type="number" min="1" value="1"></td>
+                            <td>R$59.00</td>
+                            <td>R$49.00</td>
+                          </tr>
+                          <tr> 
+                            <td class="compra">Codigo HS02</td>
+                            <td colspan="1"></td>  
+                            <td class="compra">
+                              <a href="https://wa.me/5511981868794">
+                                Realizar Compra, Meu whatsapp
+                              </a>
+                              </td>
+                          </tr>
+                        </table>
+                    </div>
                       <div class="carrusel-item">
                           <img src="unixdeSol.jpg" alt="" />
                           <div class="card__info">
-                            <span class="card__titulo">Oculo de sol homen</span>
+                            <span class="card__titulo">Oculo de sol homen <span style="color:white;">Cod HS03</span></span>
                             <span class="card__servico">Preço regular<del><span style="color: red;">R$49.00</span></del></span>
                             <span class="card__interesse">Preço Desconto <span style="color: blue;">R$34.00</span></span>
-                            <span> <span class="card__titulofoto">COMPRAR</span> </span>
+                            <span><button id="comprarButtonseis" class="card__titulofoto" onclick="mostrarTablaseis()">Ativar COMPRAR</button></span>
+                        
                           </div>
                       </div>
+                      <div id="tablaCompraseis" style="display: none;">
+                        <table>
+                          <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio unitario</th>
+                            <th>Total</th>
+                          </tr>
+                          <tr>
+                            <td>Montura de homen Cod. HS03</td>
+                            <td><input type="number" min="1" value="1"></td>
+                            <td>R$59.00</td>
+                            <td>R$49.00</td>
+                          </tr>
+                          <tr> 
+                            <td class="compra">Codigo HS03</td>
+                            <td colspan="1"></td>  
+                            <td class="compra">
+                              <a href="https://wa.me/5511981868794">
+                                Realizar Compra, Meu whatsapp
+                              </a>
+                              </td>
+                          </tr>
+                        </table>
+                    </div>
                       <div class="carrusel-item">
                           <img src="oculosdeSolunix.jpg" alt="" />
                           <div class="card__info">
-                            <span class="card__titulo">Oculo de sol Unixe</span>
+                            <span class="card__titulo">Oculo de sol Unixe <span style="color:white;">Cod OU01</span></span>
                             <span class="card__servico">Preço regular <del><span style="color: red;">R$49.00</span></del></span>
                             <span class="card__interesse">Preço Desconto <span style="color: blue;">R$34.00</span></span>
-                            <span> <span class="card__titulofoto">COMPRAR</span> </span>
+                            <span><button id="comprarButtonsiete" class="card__titulofoto" onclick="mostrarTablasiete()">Ativar COMPRAR</button></span>
                            </div>
                       </div>
+                      <div id="tablaComprasiete" style="display: none;">
+                        <table>
+                          <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio unitario</th>
+                            <th>Total</th>
+                          </tr>
+                          <tr>
+                            <td>Oculo de sol Unixe Cod. OU01</td>
+                            <td><input type="number" min="1" value="1"></td>
+                            <td>R$59.00</td>
+                            <td>R$49.00</td>
+                          </tr>
+                          <tr> 
+                            <td class="compra">Codigo OU01</td>
+                            <td colspan="1"></td>  
+                            <td class="compra">
+                              <a href="https://wa.me/5511981868794">
+                                Realizar Compra, Meu whatsapp
+                              </a>
+                              </td>
+                          </tr>
+                        </table>
+                    </div>
                       <div class="carrusel-item">
                           <img src="MonturasF1.jpg" alt="" />
                           <div class="card__info">
-                            <span class="card__titulo">Montura de mulher</span>
+                            <span class="card__titulo">Montura de mulher <span style="color:white;">Cod MM02</span></span>
                             <span class="card__servico">Preço regular <del><span style="color: red;">R$59.00</span></del></span>
                             <span class="card__interesse">Preço Desconto <span style="color: blue;">R$49.00</span></span>
-                            <span> <span class="card__titulofoto">COMPRAR</span> </span>
+                            <span><button id="comprarButtonocho" class="card__titulofoto" onclick="mostrarTablaocho()">Ativar COMPRAR</button></span>
                           </div>
                       </div>
+                      <div id="tablaCompraocho" style="display: none;">
+                        <table>
+                          <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio unitario</th>
+                            <th>Total</th>
+                          </tr>
+                          <tr>
+                            <td>Montura de mulher Cod. MM02</td>
+                            <td><input type="number" min="1" value="1"></td>
+                            <td>R$59.00</td>
+                            <td>R$49.00</td>
+                          </tr>
+                          <tr> 
+                            <td class="compra">Codigo MM02</td>
+                            <td colspan="1"></td>  
+                            <td class="compra">
+                              <a href="https://wa.me/5511981868794">
+                                Realizar Compra, Meu whatsapp
+                              </a>
+                              </td>
+                          </tr>
+                        </table>
+                    </div>
                       <div class="carrusel-item">
                          <img src="monturaM2.jpg" alt="" >
                          <div class="card__info" >
-                          <span class="card__titulo">Montura de homen</span>
+                          <span class="card__titulo">Montura de homen <span style="color:white;">Cod HM02</span></span>
                           <span class="card__servico">Preço regular <del><span style="color: red;">R$59.00</span></del></span>
                           <span class="card__interesse">Preço Desconto <span style="color: blue;">R$49.00</span></span>
-                          <span> <span class="card__titulofoto">COMPRAR</span> </span>
+                          <span><button id="comprarButtonnueve" class="card__titulofoto" onclick="mostrarTablanueve()">Ativar COMPRAR</button></span>
                          </div>      
                       </div>
+                    </div>
+                    <div id="tablaCompranueve" style="display: none;">
+                      <table>
+                        <tr>
+                          <th>Producto</th>
+                          <th>Cantidad</th>
+                          <th>Precio unitario</th>
+                          <th>Total</th>
+                        </tr>
+                        <tr>
+                          <td>Montura de homen Cod. HM02</td>
+                          <td><input type="number" min="1" value="1"></td>
+                          <td>R$49.00</td>
+                          <td>R$34.00</td>
+                        </tr>
+                        <tr> 
+                          <td class="compra">Codigo HM02</td>
+                          <td colspan="1"></td>  
+                          <td class="compra">
+                            <a href="https://wa.me/5511981868794">
+                              Realizar Compra, Meu whatsapp
+                            </a>
+                            </td>
+                        </tr>
+                      </table>
+                  </div>
                    </div>
                   </div>
                 </div>

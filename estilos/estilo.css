@@ -294,7 +294,7 @@ img {
   /*position: absolute;*/
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  background-color: green; /* Fondo semitransparente */
   color: white;
   padding: 5px;
 }
@@ -493,8 +493,8 @@ input[type="number"] {
   width: 60px;
 }
 
-button {
-  background-color: #4CAF50;
+.compra {
+  background-color: rgb(76, 175, 80);
   color: white;
   border: none;
   padding: 8px 16px;
@@ -505,3 +505,27 @@ button {
   margin: 4px 2px;
   cursor: pointer;
 }
+
+
+/* tablados
+<div id="tablaComprados" style="display: none;">
+<table>
+  <tr>
+    <th>Producto</th>
+    <th>Cantidad</th>
+    <th>Precio unitario</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td>Oculo de sol mulher</td>
+    <td><input type="number" min="1" value="1"></td>
+    <td>R$34.00</td>
+    <td>R$34.00</td>
+  </tr>
+  <!-- Puedes agregar más filas para otros productos -->
+  <tr>
+    <td colspan="3"></td>
+    <td><button onclick="realizarComprados()">Realizar Compra</button></td>
+  </tr>
+</table>
+</div>*/
