@@ -1,3 +1,8 @@
+
+window.addEventListener('DOMContentLoaded', function() {
+  window.scrollTo(0, 0);
+});
+
 const carrusel = document.querySelector(".carrusel-items");
 
 let maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
@@ -27,6 +32,78 @@ carrusel.addEventListener("mouseout", () => {
 });
 
 start();
+/////////////////////////////////////////////////////El navegador
+
+//<script>
+
+
+window.addEventListener('DOMContentLoaded', function() {
+var apresentacaoLink = document.querySelector('a[href="#apresentacao"]');
+var apresentacaoElement = document.querySelector('#apresentacao');
+
+apresentacaoLink.addEventListener('click', function(event) {
+event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+if (apresentacaoElement) {
+apresentacaoElement.scrollIntoView();
+}
+});
+});
+
+
+window.addEventListener('DOMContentLoaded', function() {
+var formacaoLink = document.querySelector('a[href="#formacao"]');
+var formacaoElement = document.querySelector('#formacao');
+
+apresentacaoLink.addEventListener('click', function(event) {
+event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+if (formacaoElement) {
+apresentacaoElement.scrollIntoView();
+}
+});
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+var experienciaLink = document.querySelector('a[href="#experiencia"]');
+var experienciaElement = document.querySelector('#experiencia');
+
+apresentacaoLink.addEventListener('click', function(event) {
+event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+if (experienciaElement) {
+apresentacaoElement.scrollIntoView();
+}
+});
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+var projetoLink = document.querySelector('a[href="#projeto"]');
+var projetoElement = document.querySelector('#projeto');
+
+apresentacaoLink.addEventListener('click', function(event) {
+event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+if (projetoElement) {
+apresentacaoElement.scrollIntoView();
+}
+});
+});
+
+
+window.addEventListener('DOMContentLoaded', function() {
+var registroLink = document.querySelector('a[href="#registro"]');
+var registroElement = document.querySelector('#registro');
+
+apresentacaoLink.addEventListener('click', function(event) {
+event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+if (registroElement) {
+apresentacaoElement.scrollIntoView();
+}
+});
+});
+//</script>
 
 //////////////funcion comprar y efectuar comprar uno
   function mostrarTabla() {
