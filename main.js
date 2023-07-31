@@ -1,7 +1,18 @@
 
+//window.addEventListener('DOMContentLoaded', function() {
+  //window.scrollTo(0, 0);
+//});
+
 window.addEventListener('DOMContentLoaded', function() {
-  window.scrollTo(0, 0);
+  const imageElement = document.querySelector('img[src="My project-1 (8).png"]');
+  if (imageElement) {
+    imageElement.scrollIntoView();
+  }
 });
+
+//window.addEventListener('DOMContentLoaded', function() {
+//  document.querySelector('#apresentacao').scrollIntoView();
+//});
 
 const carrusel = document.querySelector(".carrusel-items");
 
